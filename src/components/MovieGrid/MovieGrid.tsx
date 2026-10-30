@@ -7,10 +7,6 @@ interface MovieGridProps {
 }
 
 function MovieGrid({ movies, onSelect }: MovieGridProps) {
-  if (movies.length === 0) {
-    return null;
-  }
-
   return (
     <ul className={css.grid}>
       {movies.map((movie) => (
